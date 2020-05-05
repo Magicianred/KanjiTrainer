@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import data from "../storage/data.json";
 import "./Screens.css";
+import randomColor from "randomcolor";
+
 import {
   Button,
   Paper,
   Card,
   CardContent,
-  TextField,
   Container,
   Typography,
 } from "@material-ui/core";
@@ -51,9 +52,12 @@ export default function TrainingScreen() {
         <Container>
           <Paper>
             <Card>
-              <CardContent className="KanjiCard">
+              <CardContent
+                className="KanjiCard"
+                style={{ backgroundColor: randomColor() }}
+              >
                 <Typography
-                  style={{ fontSize: "10rem" }}
+                  style={{ fontSize: "6rem" }}
                   className="Kanji"
                   key={data.Kanji}
                 >

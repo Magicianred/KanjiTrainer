@@ -1,9 +1,9 @@
 # KanjiTrainer
-React App to study 👹 Japanese Kanji 🀄 cards in an efficient way 🎯 (work in progress)
 
-```
-git clone https://github.com/programandoconro/KanjiTrainer
-cd KanjiTrainer && npm start
-```
+Flashcards to study random 👹 Japanese Kanji 🀄 cards.
+
+## App: https://programandoconro.github.io/KanjiTrainer/
 
 <div><img src='https://github.com/programandoconro/KanjiTrainer/blob/master/sample.png?raw=true'/></div?
+
+https://programandoconro.github.io/KanjiTrainer/

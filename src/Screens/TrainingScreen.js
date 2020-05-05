@@ -18,6 +18,7 @@ export default function TrainingScreen() {
   };
   const [randomNum, setRandomNum] = useState(randomNumberGenerator(850));
   const [answer, setAnswer] = useState("");
+  const [color, setColor] = useState(randomColor());
   const KanjiNt = data[0].Kanji.DATA[randomNum];
   const ans = [
     KanjiNt.kunyomi + " / " + KanjiNt.onyomi + " / " + KanjiNt.meaning,
@@ -26,6 +27,7 @@ export default function TrainingScreen() {
   const handleNext = () => {
     setRandomNum(randomNumberGenerator(850));
     setAnswer();
+    setColor(randomColor());
   };
 
   const handleShow = () => {
@@ -40,7 +42,7 @@ export default function TrainingScreen() {
           <Button
             size="large"
             variant="outlined"
-            color="primary"
+            color="secondary"
             onClick={(e) => handleNext(e)}
           >
             {" "}
@@ -54,7 +56,7 @@ export default function TrainingScreen() {
             <Card>
               <CardContent
                 className="KanjiCard"
-                style={{ backgroundColor: randomColor() }}
+                style={{ backgroundColor: color }}
               >
                 <Typography
                   style={{ fontSize: "6rem" }}

@@ -6,6 +6,7 @@ Flashcards to study random 👹 Japanese Kanji 🀄 cards.
 
 <div>
   <img src='https://github.com/programandoconro/KanjiTrainer/blob/master/sample_pic.png?raw=true'/>
+  <h5> 勉強しましょう！！ </h5>
 </div?
 
-勉強しましょう！！
+

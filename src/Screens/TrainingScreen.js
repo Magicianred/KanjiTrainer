@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 import data from "../storage/data.json";
+import "./Screens.css";
+import {
+  Button,
+  Paper,
+  Card,
+  CardContent,
+  TextField,
+  Container,
+  Typography,
+} from "@material-ui/core";
 
 export default function TrainingScreen() {
   const randomNumberGenerator = (n) => {
@@ -11,37 +21,71 @@ export default function TrainingScreen() {
   const ans = [
     KanjiNt.kunyomi + " / " + KanjiNt.onyomi + " / " + KanjiNt.meaning,
   ];
-  const showKanji = () => {
-    console.log(KanjiNt.kanji);
 
-    return (
-      <div>
-        <p key={data.Kanji}>{KanjiNt.kanji}</p>
-      </div>
-    );
-  };
-
-  const handelNext = () => {
+  const handleNext = () => {
     setRandomNum(randomNumberGenerator(850));
-    setAnswer([]);
+    setAnswer();
   };
 
   const handleShow = () => {
     setAnswer(ans);
-    console.log(ans);
+    console.log(KanjiNt);
+  };
+
+  const showKanji = () => {
+    return (
+      <Container className="Container">
+        <Container>
+          <Button
+            size="large"
+            variant="outlined"
+            color="primary"
+            onClick={(e) => handleNext(e)}
+          >
+            {" "}
+            Next{" "}
+          </Button>
+          <br />
+          <br />
+        </Container>
+        <Container>
+          <Paper>
+            <Card>
+              <CardContent className="KanjiCard">
+                <Typography
+                  style={{ fontSize: "10rem" }}
+                  className="Kanji"
+                  key={data.Kanji}
+                >
+                  {KanjiNt.kanji}
+                </Typography>
+                <Typography>{answer}</Typography>
+              </CardContent>
+            </Card>
+          </Paper>
+        </Container>
+      </Container>
+    );
   };
 
   return (
-    <div>
+    <Container className="Main">
       {showKanji()}
-
-      <button onClick={(e) => handelNext(e)}> Next </button>
       <br />
-      <hr />
-      <button onClick={(e) => handleShow(e)}> Show </button>
-      <div>
-        <p>{answer}</p>
-      </div>
-    </div>
+
+      <Button
+        size="large"
+        variant="outlined"
+        color="secondary"
+        onClick={(e) => handleShow(e)}
+      >
+        {" "}
+        Show{" "}
+      </Button>
+      <br />
+      <br />
+
+      <br />
+    </Container>
   );
 }

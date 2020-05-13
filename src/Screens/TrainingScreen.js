@@ -32,7 +32,6 @@ export default function TrainingScreen() {
 
   const handleShow = () => {
     setAnswer(ans);
-    console.log(KanjiNt);
   };
 
   const showKanji = () => {
@@ -47,6 +46,15 @@ export default function TrainingScreen() {
           >
             {" "}
             Next{" "}
+          </Button>
+          <Button
+            size="large"
+            variant="outlined"
+            color="secondary"
+            onClick={(e) => handleShow(e)}
+          >
+            {" "}
+            Show{" "}
           </Button>
           <br />
           <br />
@@ -77,21 +85,7 @@ export default function TrainingScreen() {
   return (
     <Container className="Main">
       {showKanji()}
-      <br />
-
-      <Button
-        size="large"
-        variant="outlined"
-        color="secondary"
-        onClick={(e) => handleShow(e)}
-      >
-        {" "}
-        Show{" "}
-      </Button>
-      <br />
-      <br />
-
-      <br />
+      <hr />
     </Container>
   );
 }

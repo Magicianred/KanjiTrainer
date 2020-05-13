@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80af05a1d99585d77b7edbc64915ba99",
+    "revision": "0e85a57d787c566bbefc0a2c27e1970c",
     "url": "/KanjiTrainer/index.html"
   },
   {
-    "revision": "a37b308efcd23f6eca9d",
+    "revision": "7461b5ab0e0b9a5dbe09",
     "url": "/KanjiTrainer/static/css/main.060891f1.chunk.css"
   },
   {
-    "revision": "392e2fcd1ca0a2aa3f1a",
-    "url": "/KanjiTrainer/static/js/2.33a546c4.chunk.js"
+    "revision": "60ae54f1dcf26babcb60",
+    "url": "/KanjiTrainer/static/js/2.5dfecd8d.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/KanjiTrainer/static/js/2.33a546c4.chunk.js.LICENSE.txt"
+    "url": "/KanjiTrainer/static/js/2.5dfecd8d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a37b308efcd23f6eca9d",
-    "url": "/KanjiTrainer/static/js/main.3e4b8323.chunk.js"
+    "revision": "7461b5ab0e0b9a5dbe09",
+    "url": "/KanjiTrainer/static/js/main.34de7422.chunk.js"
   },
   {
     "revision": "b2872dbb214a8d83d588",

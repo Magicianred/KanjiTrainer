@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/KanjiTrainer/precache-manifest.bf9d1214dbf58c52d0b0e1c507deb70c.js"
+  "/KanjiTrainer/precache-manifest.79ab26ba21e0e2aaa2d2430631fb2b4b.js"
 );
 
 self.addEventListener('message', (event) => {
